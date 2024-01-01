@@ -36,7 +36,7 @@ int main() {
     time_t now = time(0);
     tm *ltm = localtime(&now);
       cout << "\x1B[96m ############ \n";
-      cout << "\x1B[96m  ##  ##  ##   "<<"\x1B[92m"<<name<<"@"<<"console\n";
+      cout << "\x1B[96m  ##  ##  ##   "<<"\x1B[92m"<<name<<"\x1B[91m@\x1B[92m"<<"console\n";
       cout << "\x1B[96m  ##  ##  ##   "<<"\x1B[91m"<<"--------------\n";
       cout << "\x1B[96m  ##  ##  ##   "<<"\x1B[92m"<<ltm->tm_hour << ":" << ltm->tm_min << ":" << ltm->tm_sec<<"\n";
       cout << "\x1B[96m  ##  ##  ##   "<<"\x1B[92mtermax OS"<<"\n";
